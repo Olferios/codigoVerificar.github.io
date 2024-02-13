@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codigo</title>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script>   let lista = ["201012341-3"]
+        localStorage.setItem("data", JSON.stringify(lista));
+    </script>
+</head>
+
+<body>
+    <div class="container calculadora">
+        <h3 class="text-center">Codigo verificar</h3>
+        <form id="calculadoraFormulario">
+            <div class="form-group">
+                <label for="opernado1">Ingrese numero</label>
+                <input type="text" class="form-control" id="operando1" required>
+            </div>
+
+
+            <button type="button" class="btn btn-primary" onclick="verificar()">Generar</button>
+            <button type="button" class="btn btn-primary" onclick="repetido()">verificar codigo</button>
+            
+            <button id="bot3" type="button" class="btn btn-primary" onclick="listados()">ver</button>
+        </form>
+        <div id="resultado" class="mt-3">0</div>
+
+        <div id="listado">click para ver codigos</div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
